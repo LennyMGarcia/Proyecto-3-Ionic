@@ -1,0 +1,45 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar >
+    <ion-title>
+      Sumadora
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"  >
+  <ion-header collapse="condense">
+    
+    <ion-toolbar color="danger">
+      <ion-title size="large">Sumadora</ion-title>
+    </ion-toolbar>
+  </ion-header >
+  <p>•  Elija los dos numeros a sumar: </p>
+  <ion-list>
+    <ion-item>
+      
+      <ion-label>No. 1:  </ion-label>
+      <ion-input [(ngModel)]="Num1"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >No. 2: </ion-label>
+      <ion-input [(ngModel)]="Num2"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-button  (click)="Calcular()"  color="danger"> Calcular</ion-button>
+    </ion-item>
+
+    <ion-item>
+      {{Resultado}}
+    </ion-item>
+  </ion-list>
+
+
+  
+  <div id="container">
+    
+
+  </div>
+</ion-content>
+
